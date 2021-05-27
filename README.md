@@ -1,10 +1,9 @@
-# VSCODE + JAVA + JUNIT5 + SQLITE + JAVAFX
-Para usarlo desde Windows 10 x64
-
-## JAVA
+# VSCODE + Java 11 + JUnit5 + SQLite3 + JavaFX11
+Para usarlo desde Windows 10 x64git
+## VSCODE
 1.- Instalar `VSCODE` de: https://code.visualstudio.com/Download
 
-
+## JAVA
 2.- Instalar `Java Extension Pack` desde Extensions   
 https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
 
@@ -12,10 +11,9 @@ https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
 Comando `Create Java Project` -> no build tools -> {Carpeta} -> {Nombre Proyecto}
 
 Vamos a los archivos -> src -> `App.java`  
-Nos obliga a configurar JDK si no tenemos ninguno.
-Configure Java Runtime
+Nos obliga a configurar JDK si no tenemos ninguno en la pestaña `Configure Java Runtime`
 
-He escogido el `OpenJDK11U-jdk_x64_windows_hotspot_11.0.11_9` que señala por defecto. Lo descargamos, instalamos y `Reload window`.  
+He escogido el `OpenJDK11U-jdk_x64_windows_hotspot_11.0.11_9` que señala por defecto. Lo descargamos e instalamos, y pulsamos `Reload window`.  
 Debe aparecer como el JDK seleccionado para este proyecto.
 
 
@@ -69,7 +67,7 @@ donde indicamos en `vmArgs` el path donde hemos copiado las librerías de JavaFX
 ## SCENE BUILDER 
 Instalamos el programa https://gluonhq.com/products/scene-builder/
 
-Creamos una escena View.fxml. Esta es una escana con un Label, un TextField y un Button. Indicamos los Id que van a tener en code, y el nombre del método al pulsar el botón.
+Creamos una escena View.fxml. Esta es una escana con un `Label`, un `TextField` y un `Button`. Indicamos los `Id` que van a tener en code, y el nombre del método al pulsar el botón.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.Button?>
@@ -133,9 +131,9 @@ Creamos una escena View.fxml. Esta es una escana con un Label, un TextField y un
   </children>
 </VBox>
 ```
-En el menu View, tenemos la opción Show Sample Controller Skeleton que nos sirve para preparar nuestro controlador.
+En el menu `View`, tenemos la opción `Show Sample Controller Skeleton` que nos sirve para preparar nuestro controlador.
 
-Creamos el controlador en un archivo controller.java, Tal y como nos lo haya presentado el Scene Builder y le añadimos el código en la Action del Button.
+Creamos el controlador en un archivo `controller.java`, Tal y como nos lo haya presentado el Scene Builder y le añadimos el código en la Action del Button.
 
 ```java
 package ui;
@@ -170,7 +168,7 @@ public class Controller {
 }
 ```
 
-Ahora ya podemos utilizarlos desde nuestra aplicación App.java
+Ahora ya podemos utilizarlos desde nuestra aplicación `App.java`
 ```java
 import java.net.URL;
 
