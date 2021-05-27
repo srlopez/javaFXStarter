@@ -1,5 +1,5 @@
 # VSCODE + Java 11 + JUnit5 + SQLite3 + JavaFX11
-Para usarlo desde Windows 10 x64git
+Para usarlo desde Windows 10 x64
 ## VSCODE
 1.- Instalar `VSCODE` de: https://code.visualstudio.com/Download
 
